@@ -1,0 +1,199 @@
+#parent {
+  position: relative;
+  border: 4px solid black;
+  height: 95vh;
+  width: 100%;
+  padding: 0;
+}
+
+.start-game-btn {
+  margin-top: 277px;
+  margin-left: 20px;
+  border-radius: 5px;
+  padding: 6px;
+  font-weight: 700;
+  font-family: system-ui;
+  font-size: 16px;
+  height: 30px;
+  padding-top: 1px;
+}
+
+#playAgain {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: xxx-large;
+  margin-top: -120px;
+  background-color: #52b052;
+  border-radius: 20px;
+  width: 500px;
+  height: 170px;
+  padding-top: 60px;
+}
+
+.yes-btn {
+  width: 75px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: darkturquoise;
+  cursor: pointer;
+}
+
+.no-btn {
+  width: 75px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: red;
+  cursor: pointer;
+}
+
+#totalScore {
+  margin-top: 10px;
+  margin-left: 6px;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+p {
+  position: absolute;
+  border: 2px solid;
+  margin: 0;
+  padding: 5px;
+  font-weight: 700;
+  font-size: large;
+}
+
+p:nth-child(1) {
+  border-color: green;
+  top: 0;
+  left: 0;
+  background-color: aquamarine;
+}
+
+p:nth-child(2) {
+  border-color: red;
+  top: 0;
+  right: 0;
+  background-color: antiquewhite;
+}
+
+p:nth-child(3) {
+  border-color: yellow;
+  bottom: 0;
+  left: 0;
+  background-color: brown;
+}
+
+p:nth-child(4) {
+  border-color: pink;
+  bottom: 0;
+  right: 0;
+  background-color: chartreuse;
+}
+
+#myAnimation {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+}
+
+.myimage {
+  width: 220px;
+  height: 215px;
+  position: absolute;
+  top: 12px;
+  border-radius: 35px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+@-webkit-keyframes in {
+  0% {
+    -webkit-transform: scale(0) rotate(12deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes in {
+  0% {
+    transform: scale(0) rotate(12deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes out {
+  0% {
+    -webkit-transform: scale(1) rotate(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: scale(0) rotate(12deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes out {
+  0% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    transform: scale(0) rotate(180deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.flags {
+  position: absolute;
+  border: 2px solid;
+  margin: 3px;
+  padding: 16px;
+  width: 70px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#hint {
+  background: yellow;
+  color: red;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+#hint.show {
+  -webkit-animation: in 700ms ease both;
+  animation: in 700ms ease both;
+}
+
+.myimage.hide {
+  -webkit-animation: out 1500ms ease both;
+  animation: out 1500ms ease both;
+}
+
+.hide {
+  -webkit-animation: out 700ms ease both;
+  animation: out 700ms ease both;
+}

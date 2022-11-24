@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./Styles.css"/> 
+</head>
+
+<body>
+    <div id="parent">
+        <p class="flags">Japanese</p>
+        <p class="flags">Chinese</p>
+        <p class="flags">Korean</p>
+        <p class="flags">Thai</p>
+
+        <button onclick="playGame()" class="start-game-btn"> start game </button>
+        <div id="totalScore"> Total Score: 0 </div> 
+        <div id="playAgain" style="display: none;"> 
+            Play Again?
+            <div>
+                <button class="yes-btn"  onclick="javascript:(function() { location.reload(); })()"> Yes </button> 
+                <button class="no-btn" onclick="javascript:(function() { document.getElementById('playAgain').style.display='none'; })()"> No </button> 
+            </div>
+            
+        </div> 
+    </div> 
+
+</body>
+
+<script src="./Main.js"> </script>
+
+</html>
